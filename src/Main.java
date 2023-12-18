@@ -80,13 +80,36 @@ public class Main {
         film1.setTitlu("Titanic");
         System.out.println(film1.getTitlu());
 
-        Inotator inotator1 = new Inotator();
+        Inotator inotator1 = new Inotator("Romania","fluture");
         inotator1.seAntreneaza();
         inotator1.seOdihneste();
+//       System.out.println(inotator1.tara);
 
-        Maratonist maratonist1 = new Maratonist();
+        Maratonist maratonist1 = new Maratonist("Congo","100 m");
         maratonist1.seAntreneaza();
         maratonist1.seOdihneste();
+
+        Pisica pisi = new Pisica();
+        pisi.scoateSunete();
+        Caine cutu = new Caine();
+        cutu.scoateSunete();
+
+        Mamifer mamifer1 = new Pisica();
+        mamifer1.scoateSunete();
+
+        Pisica pisi1 =  new Pisica (); // pisi1 = Pisica
+        Mamifer pisi2 = pisi1; //merge automat
+
+       // Pisica pisi3 = (Pisica) new Mamifer(); // pisi3 e de tip Mamifer
+       // Pisica pisi4 = (Pisica) pisi3; //pisi4 il facem de tip Pisica
+
+
+
+
+
+
+
+
 
 
     }
